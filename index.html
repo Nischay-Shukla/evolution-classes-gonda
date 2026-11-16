@@ -1,0 +1,809 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Evolution Classes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Evolution Classes, Gonda, Uttar Pradesh. CBSE and ICSE board coaching for Classes 6 to 10 in fully air-conditioned classrooms. Meet the faculty and send an admission enquiry.">
+<meta property="og:title" content="Evolution Classes, Gonda">
+<meta property="og:description" content="Strong concepts. Expert guidance. Consistent progress. CBSE and ICSE board classes for Classes 6 to 10.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Evolution Classes","address":{"@type":"PostalAddress","addressLocality":"Gonda","addressRegion":"Uttar Pradesh","addressCountry":"IN"}}
+</script>
+<style>
+/* Layout concept: white editorial page, oversized serif headlines, asymmetric 12-column grids,
+   hairline rules instead of cards, one forest-green band for the teaching philosophy.
+   Green is the single accent; pale green marks highlighted sections.
+   Placeholders are hatched pale-green panels so unverified content is always visibly unfinished. */
+:root {
+  --ink: #111111;
+  --muted: #737373;
+  --muted-strong: #5c5c5c;
+  --paper: #ffffff;
+  --green: #166534;
+  --forest: #14532d;
+  --leaf: #22c55e;
+  --mint: #86efac;
+  --pale: #f0fdf4;
+  --pale-2: #e1f5e8;
+  --line: #e4e8e5;
+  --field: #858a85;
+  --danger: #9b2c2c;
+  --serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--paper); }
+[id] { scroll-margin-top: 5rem; }
+::selection { background: var(--mint); color: var(--ink); }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.gutter { padding-left: max(clamp(16px, 4.5vw, 56px), env(safe-area-inset-left, 0px)); padding-right: max(clamp(16px, 4.5vw, 56px), env(safe-area-inset-right, 0px)); }
+
+.font-serif { font-family: var(--serif); font-optical-sizing: auto; }
+.h-hero { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 8.4vw, 8rem); line-height: .93; letter-spacing: -.035em; }
+.h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(2.4rem, 5.4vw, 4.75rem); line-height: 1; letter-spacing: -.025em; text-wrap: balance; }
+.h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.6rem, 2.6vw, 2.25rem); line-height: 1.1; letter-spacing: -.015em; text-wrap: balance; }
+.eyebrow { display: inline-flex; align-items: center; gap: .75rem; font: 600 .75rem/1.2 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--green); }
+.eyebrow::before { content: ""; width: 2rem; height: 1px; background: var(--leaf); flex: none; }
+.lede { font-size: 1.125rem; line-height: 1.65; color: var(--muted-strong); max-width: 36rem; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; padding: 1rem 1.6rem; font: 500 .8125rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--green); cursor: pointer; transition: background .25s, color .25s, border-color .25s; text-decoration: none; }
+.btn svg { width: 16px; height: 16px; transition: transform .25s; flex: none; }
+.btn:hover svg { transform: translateX(3px); }
+.btn-solid { background: var(--green); color: #fff; }
+.btn-solid:hover { background: var(--forest); border-color: var(--forest); }
+.btn-line { background: transparent; color: var(--green); }
+.btn-line:hover { background: var(--green); color: #fff; }
+.btn-sm { padding: .8rem 1.2rem; font-size: .75rem; }
+.btn[disabled] { opacity: .55; cursor: progress; }
+
+.navlink { position: relative; padding: .25rem 0; font-size: .875rem; color: var(--ink); text-decoration: none; }
+.navlink::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: var(--leaf); transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+.navlink:hover::after, .navlink.active::after { transform: scaleX(1); }
+.navlink:hover, .navlink.active { color: var(--green); }
+.flink { color: var(--muted-strong); text-decoration: none; transition: color .2s; }
+.flink:hover { color: var(--green); }
+
+.tbc { color: var(--forest); background: rgba(34,197,94,.14); border-bottom: 1px dotted var(--green); padding: 0 .25em; font-style: normal; }
+.tag { display: inline-block; border: 1px solid var(--green); color: var(--green); padding: .3rem .5rem; font: 600 .6875rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+
+.chip { border: 1px solid #cfe6d6; background: #fff; padding: .3rem .75rem; font-size: .85rem; line-height: 1.4; }
+.chip-tbc { border-style: dashed; background: transparent; color: var(--muted-strong); }
+.course-row { transition: background .3s; }
+.course-row:hover { background: #fff; }
+.ph { background-image: repeating-linear-gradient(135deg, transparent 0 11px, rgba(22,101,52,.10) 11px 12px); border: 1px solid var(--line); }
+.zoom img { transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.zoom:hover img { transform: scale(1.03); }
+.mapbox { background-color: var(--pale); background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 36px 36px; border: 1px solid var(--line); }
+
+.label { display: block; font: 600 .75rem/1.2 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+.input { width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--field); border-radius: 0; padding: .8rem 0; font: 400 1rem/1.4 var(--sans); color: var(--ink); transition: box-shadow .2s, border-color .2s; }
+.input::placeholder { color: var(--muted); }
+.input:focus { outline: none; border-bottom-color: var(--green); box-shadow: 0 1px 0 0 var(--green); }
+.input[aria-invalid="true"] { border-bottom-color: var(--danger); }
+textarea.input { resize: vertical; min-height: 6.5rem; }
+
+.fab { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 50; display: inline-flex; align-items: center; gap: .6rem; padding: .85rem 1rem; background: var(--green); color: #fff; border: 1px solid var(--green); font: 500 .75rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; transition: background .25s, border-color .25s; }
+.fab:hover { background: var(--forest); border-color: var(--forest); }
+.fab svg { width: 20px; height: 20px; }
+
+.reveal { opacity: .85; transform: translateY(14px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+
+<div id="root"></div>
+<noscript><p style="padding:2rem;font-family:sans-serif">This website needs JavaScript to display.</p></noscript>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    fontFamily: { serif: ['Newsreader', 'Georgia', 'serif'], sans: ['Instrument Sans', 'system-ui', 'sans-serif'] },
+    colors: { ink: '#111111', muted: '#737373', green: '#166534', forest: '#14532d', leaf: '#22c55e', mint: '#86efac', pale: '#f0fdf4', line: '#e4e8e5' }
+  } }
+};
+</script>
+
+<script>
+(function () {
+  var useState = React.useState, useEffect = React.useEffect, useRef = React.useRef;
+  var htmFn = typeof htm === 'function' ? htm : htm.default;
+  var html = htmFn.bind(React.createElement);
+  var h = React.createElement;
+  var cx = function () { return Array.prototype.filter.call(arguments, Boolean).join(' '); };
+
+  /* =====================================================================
+     CONTENT  (edit everything here)
+     Faculty details left empty are simply not shown. The Results section
+     stays hidden until at least one verified entry is added below.
+     ===================================================================== */
+  var CONFIG = {
+    brand: {
+      name: 'Evolution Classes',
+      city: 'Gonda',
+      state: 'Uttar Pradesh',
+      established: '',            // e.g. '2012'. Empty shows [Year].
+      description: 'Evolution Classes is a coaching institute in Gonda, Uttar Pradesh, for CBSE and ICSE board students of Classes 6 to 10, focused on conceptual understanding, consistent practice and individual guidance.'
+    },
+    contact: {
+      address: 'In Front of Raghukul Vidyapeeth',
+      phones: ['+91 82997 04215', '+91 99845 78331', '+91 88745 80492'],
+      whatsapp: '918299704215',   // digits only with country code
+      mapQuery: 'Evolution Classes, In Front of Raghukul Vidyapeeth, Gonda, Uttar Pradesh',
+      mapEmbedSrc: ''             // paste the Google Maps "Embed a map" src URL when hosting on a real domain
+    },
+    form: {
+      endpoint: '',               // URL of a form service. Empty runs in demo mode (nothing is sent).
+      classes: [6, 7, 8, 9, 10],
+      subjects: ['Mathematics', 'Science', 'Other subject']
+    },
+    social: [
+      { label: 'Instagram', href: '' },
+      { label: 'Facebook', href: '' },
+      { label: 'YouTube', href: '' }
+    ],
+    images: {                     // paste image URLs or data URIs. Empty shows a photo placeholder.
+      hero: 'img/classroom.jpg',
+      about: 'img/building.jpg'
+    },
+    nav: [['home', 'Home'], ['about', 'About'], ['courses', 'Courses'], ['faculty', 'Faculty'], ['results', 'Results'], ['contact', 'Contact']],
+    about: {
+      intro: 'Evolution Classes is an institute built around conceptual understanding, steady academic development and individual attention. A student who knows why an answer is right will remember it longer, and use it better, than one who has only memorised it.',
+      points: [
+        { title: 'Teaching philosophy', text: 'Concepts first, shortcuts later. Every topic is taught from its foundations so students can reason through questions they have not seen before.' },
+        { title: 'Learning environment', text: 'Fully air-conditioned classrooms arranged for attention and questions, where students are encouraged to attempt, ask and be corrected without hesitation.' },
+        { title: 'Academic approach', text: 'Structured lessons, regular practice and periodic assessment keep progress visible to students and parents alike.' },
+        { title: 'Commitment to student development', text: 'Marks matter, and so do confidence, discipline and the habit of independent study. Progress is tracked on all of them.' }
+      ]
+    },
+    courses: [
+      {
+        group: 'Middle School Education', note: 'Classes 6, 7 and 8',
+        intro: 'The middle years, where concepts are introduced and good study habits take shape.',
+        footnote: '',
+        items: [
+          { cls: 6, level: 'Middle', subjects: ['Mathematics', 'Science'], otherSubjects: null, description: 'A steady start to subject-based learning, building curiosity and the basics that later classes rely on.' },
+          { cls: 7, level: 'Middle', subjects: ['Mathematics', 'Science'], otherSubjects: null, description: 'Deepens core concepts and builds the habit of regular practice and self-checking.' },
+          { cls: 8, level: 'Middle', subjects: ['Mathematics', 'Science'], otherSubjects: null, description: 'Consolidates the middle years and prepares students for the step up to Class 9.' }
+        ]
+      },
+      {
+        group: 'Secondary Education', note: 'Classes 9 and 10',
+        intro: 'Where fundamentals are built and board-year habits begin.',
+        footnote: '',
+        items: [
+          { cls: 9, level: 'Secondary', subjects: ['Mathematics', 'Science'], otherSubjects: null, description: 'Strengthens fundamentals and builds the study habits that every later class depends on.' },
+          { cls: 10, level: 'Secondary', subjects: ['Mathematics', 'Science'], otherSubjects: null, description: 'Focused preparation for the board examination through concept revision, practice and regular assessment.' }
+        ]
+      }
+    ],
+    /* Faculty: leave a field empty to show a placeholder. photo = image URL. */
+    faculty: [
+      { name: 'Pradeep Sir', photo: '', subject: '', qualifications: '', experience: '' },
+      { name: 'Satyam Sir', photo: '', subject: '', qualifications: '', experience: '' }
+    ],
+    principles: [
+      { n: '01', title: 'Conceptual Clarity', text: 'Build strong fundamentals instead of relying solely on memorisation.' },
+      { n: '02', title: 'Consistent Practice', text: 'Develop understanding through regular exercises and assessments.' },
+      { n: '03', title: 'Individual Guidance', text: 'Help students identify weaknesses and improve continuously.' }
+    ],
+    /* Results: the section appears only once verified entries are added.
+       achievements: { student, achievement, year }   boards: { year, cls, result }
+       milestones:   { title, year }                  testimonials: { quote, name, detail } */
+    results: { achievements: [], boards: [], milestones: [], testimonials: [] },
+    /* Gallery: src = image URL. span = desktop grid placement. */
+    gallery: [
+      { label: 'Classrooms', hint: 'Classroom with students seated and engaged', src: 'img/classroom.jpg', pos: 'center', tone: 'a', span: 'md:col-start-1 md:col-span-7 md:row-start-1 md:row-span-4' },
+      { label: 'Teaching sessions', hint: 'Teacher explaining at the board', src: 'img/classroom.jpg', scale: 2.1, origin: '26% 46%', tone: 'b', span: 'md:col-start-8 md:col-span-5 md:row-start-1 md:row-span-2' },
+      { label: 'The institute', hint: 'The institute entrance', src: 'img/building.jpg', pos: '22% center', tone: 'c', span: 'md:col-start-8 md:col-span-5 md:row-start-3 md:row-span-2' }
+    ]
+  };
+
+  /* ===================== helpers ===================== */
+  function go(id) {
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function waLink(text) {
+    var n = (CONFIG.contact.whatsapp || '').replace(/\D/g, '');
+    return 'https://wa.me/' + n + '?text=' + encodeURIComponent(text);
+  }
+  function mapsLink() {
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONFIG.contact.mapQuery);
+  }
+  function normPhone(v) {
+    var d = String(v).replace(/\D/g, '');
+    if (d.length === 12 && d.indexOf('91') === 0) d = d.slice(2);
+    if (d.length === 11 && d.charAt(0) === '0') d = d.slice(1);
+    return d;
+  }
+  function fill(arr, n) {
+    return arr.length ? arr : Array.apply(null, Array(n)).map(function () { return null; });
+  }
+
+  /* ===================== small components ===================== */
+  var ICONS = {
+    arrow: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`,
+    out: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`,
+    menu: html`<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>`,
+    close: html`<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`,
+    pin: html`<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>`,
+    chat: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>`,
+    check: html`<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>`,
+    caret: html`<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>`
+  };
+
+  function NAV() {
+    var R = CONFIG.results;
+    var any = R.achievements.length || R.boards.length || R.milestones.length || R.testimonials.length;
+    return CONFIG.nav.filter(function (n) { return n[0] !== 'results' || any; });
+  }
+
+  function Tbc(p) { return html`<span className="tbc">${p.children}</span>`; }
+  function Tag() { return html`<span className="tag">To confirm</span>`; }
+
+  function Reveal(p) {
+    var ref = useRef(null);
+    useEffect(function () {
+      var el = ref.current;
+      if (!el) return;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!('IntersectionObserver' in window) || reduce) { el.classList.add('in'); return; }
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+      io.observe(el);
+      return function () { io.disconnect(); };
+    }, []);
+    var kids = Array.isArray(p.children) ? p.children : [p.children];
+    return h.apply(null, [p.as || 'div', { ref: ref, className: cx('reveal', p.className), style: { transitionDelay: (p.delay || 0) + 'ms' } }].concat(kids));
+  }
+
+  function Photo(p) {
+    var tones = { a: 'var(--pale)', b: 'var(--pale-2)', c: '#ebf9ef' };
+    return html`<figure className=${cx('zoom relative m-0 overflow-hidden', p.src ? '' : 'ph', p.className)} style=${{ background: p.src ? 'var(--pale)' : tones[p.tone || 'a'] }}>
+      ${p.src
+        ? html`<img src=${p.src} alt=${p.alt || p.label || ''} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" style=${{ objectPosition: p.pos || 'center', transform: p.scale ? 'scale(' + p.scale + ')' : undefined, transformOrigin: p.origin || 'center' }} />`
+        : html`<div className="absolute inset-0 flex items-center justify-center font-serif text-[clamp(3rem,8vw,5rem)] text-[var(--green)] opacity-60" aria-hidden="true">${p.initials || ''}</div>`}
+      ${p.label ? html`<figcaption className="absolute bottom-3 left-3 bg-white px-2.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.16em]">${p.label}</figcaption>` : null}
+    </figure>`;
+  }
+
+  function SectionHead(p) {
+    return html`<div className=${p.className || ''}>
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+        <span className="eyebrow">${p.eyebrow}</span>
+      </div>
+      <h2 className="h2 mt-6">${p.title}</h2>
+    </div>`;
+  }
+
+  function Wordmark() {
+    return html`<a href="#home" onClick=${function (e) { e.preventDefault(); go('home'); }} className="inline-flex items-baseline no-underline text-[var(--forest)]" aria-label="Evolution Classes, home">
+      <span className="font-serif text-[1.4rem] font-semibold leading-none tracking-tight sm:text-[1.65rem]">Evolution Classes</span>
+    </a>`;
+  }
+
+  /* ===================== layout sections ===================== */
+  function Header(p) {
+    var st = useState(false), open = st[0], setOpen = st[1];
+    function nav(id) { return function (e) { e.preventDefault(); setOpen(false); go(id); }; }
+    return html`<header className="sticky z-40 border-b border-[var(--line)]" style=${{ top: 'env(safe-area-inset-top, 0px)', background: 'rgba(255,255,255,.95)', backdropFilter: 'saturate(1.2) blur(10px)', WebkitBackdropFilter: 'saturate(1.2) blur(10px)' }}>
+      <div className="gutter">
+        <div className="mx-auto flex h-[68px] max-w-[1320px] items-center justify-between gap-6">
+          <${Wordmark} />
+          <nav aria-label="Primary" className="hidden items-center gap-9 lg:flex">
+            ${NAV().map(function (n) {
+              return html`<a key=${n[0]} href=${'#' + n[0]} onClick=${nav(n[0])} className=${cx('navlink', p.active === n[0] && 'active')} aria-current=${p.active === n[0] ? 'true' : undefined}>${n[1]}</a>`;
+            })}
+          </nav>
+          <div className="flex items-center gap-3">
+            <button type="button" className="btn btn-solid btn-sm hidden sm:inline-flex" onClick=${function () { p.onEnquire(); }}>Enquire Now</button>
+            <button type="button" className="inline-flex h-11 w-11 items-center justify-center border border-[var(--line)] lg:hidden" aria-expanded=${open} aria-controls="mobile-menu" aria-label=${open ? 'Close menu' : 'Open menu'} onClick=${function () { setOpen(!open); }}>
+              ${open ? ICONS.close : ICONS.menu}
+            </button>
+          </div>
+        </div>
+      </div>
+      ${open ? html`<div id="mobile-menu" className="gutter absolute left-0 right-0 top-full border-b border-[var(--line)] bg-white pb-8 pt-4 lg:hidden">
+        <nav aria-label="Mobile" className="mx-auto flex max-w-[1320px] flex-col">
+          ${NAV().map(function (n) {
+            return html`<a key=${n[0]} href=${'#' + n[0]} onClick=${nav(n[0])} className="border-b border-[var(--line)] py-4 font-serif text-[1.75rem] leading-none text-[var(--ink)] no-underline">${n[1]}</a>`;
+          })}
+          <button type="button" className="btn btn-solid mt-7" onClick=${function () { setOpen(false); p.onEnquire(); }}>Enquire Now ${ICONS.arrow}</button>
+        </nav>
+      </div>` : null}
+    </header>`;
+  }
+
+  function Hero(p) {
+    var est = CONFIG.brand.established;
+    return html`<section id="home" className="gutter pb-16 pt-10 md:pb-24 md:pt-16">
+      <div className="mx-auto max-w-[1320px]">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-7 lg:pt-6">
+            <p className="eyebrow rise">Gonda, Uttar Pradesh${est ? ' · Est. ' + est : ''}</p>
+            <h1 className="h-hero rise mt-8" style=${{ animationDelay: '90ms' }}>
+              <span className="block">Education</span>
+              <span className="block">That <em className="italic text-[var(--green)]">Builds</em></span>
+              <span className="block">More Than</span>
+              <span className="block">Grades.</span>
+            </h1>
+            <p className="lede rise mt-9" style=${{ animationDelay: '200ms' }}>Strong concepts. Expert guidance. Consistent progress. A learning environment designed to help students build confidence and achieve academic excellence.</p>
+            <div className="rise mt-10 flex flex-wrap gap-3" style=${{ animationDelay: '300ms' }}>
+              <button type="button" className="btn btn-solid" onClick=${function () { go('courses'); }}>Explore Courses ${ICONS.arrow}</button>
+              <button type="button" className="btn btn-line" onClick=${function () { p.onEnquire(); }}>Enquire Now</button>
+            </div>
+          </div>
+          <div className="rise lg:col-span-5 lg:mt-20" style=${{ animationDelay: '240ms' }}>
+            <${Photo} src=${CONFIG.images.hero} pos="22% center" className="aspect-[5/6] w-full" tone="a" hint="Teacher interacting with students in a classroom, natural light" alt="A teacher writing on a whiteboard while students follow the lesson" />
+            <p className="mt-3 text-[13px] text-[var(--muted-strong)]">A class in session</p>
+          </div>
+        </div>
+        <dl className="mt-16 grid border-t border-[var(--line)] sm:grid-cols-3 md:mt-24">
+          ${[['Boards', 'CBSE and ICSE'], ['Classes', '6th to 10th'], ['Classrooms', 'Fully air conditioned']].map(function (f, i) {
+            return html`<div key=${f[0]} className=${cx('py-6 sm:py-8', i > 0 && 'border-t border-[var(--line)] sm:border-l sm:border-t-0 sm:pl-8')}>
+              <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--green)]">${f[0]}</dt>
+              <dd className="mt-2 font-serif text-[1.5rem] leading-tight">${f[1]}</dd>
+            </div>`;
+          })}
+        </dl>
+      </div>
+    </section>`;
+  }
+
+  function About() {
+    var A = CONFIG.about;
+    return html`<section id="about" className="gutter border-t border-[var(--line)] py-24 md:py-32">
+      <div className="mx-auto grid max-w-[1320px] gap-14 lg:grid-cols-12 lg:gap-8">
+        <${Reveal} className="lg:sticky lg:top-28 lg:col-span-6 lg:self-start">
+          <${Photo} src=${CONFIG.images.about} pos="18% center" className="aspect-[5/4] w-full" tone="b" hint="Wide photograph of the institute building or main classroom" alt="The Evolution Classes building with its signboard and glass entrance" />
+          <p className="mt-3 text-[13px] text-[var(--muted-strong)]">The institute, in front of Raghukul Vidyapeeth, Gonda</p>
+        <//>
+        <${Reveal} className="lg:col-span-5 lg:col-start-8 lg:pt-10" delay=${120}>
+          <${SectionHead} eyebrow="About Evolution Classes" title="A Better Way to Learn." />
+          <p className="lede mt-8">${A.intro}</p>
+          <dl className="mt-12 border-t border-[var(--line)]">
+            ${A.points.map(function (pt) {
+              return html`<div key=${pt.title} className="grid gap-2 border-b border-[var(--line)] py-6 sm:grid-cols-[11rem_1fr] sm:gap-8">
+                <dt className="font-serif text-[1.2rem] leading-snug">${pt.title}</dt>
+                <dd className="text-[0.95rem] leading-relaxed text-[var(--muted-strong)]">${pt.text}</dd>
+              </div>`;
+            })}
+          </dl>
+        <//>
+      </div>
+    </section>`;
+  }
+
+  function CourseRow(p) {
+    var c = p.course;
+    return html`<article className="course-row -mx-3 grid gap-5 border-t border-[var(--line)] px-3 py-8 sm:grid-cols-[6.5rem_1fr] md:-mx-5 md:grid-cols-[7.5rem_1fr_auto] md:items-start md:gap-8 md:px-5 md:py-10">
+      <div className="font-serif text-[clamp(3.5rem,7vw,5.5rem)] leading-[.85] tracking-tight text-[var(--green)]" aria-hidden="true">${String(c.cls).padStart(2, '0')}</div>
+      <div className="min-w-0">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--muted-strong)]">Class ${c.cls} · ${c.level}</p>
+        <p className="mt-3 max-w-[34rem] text-[1rem] leading-relaxed">${c.description}</p>
+        <ul className="mt-5 flex flex-wrap gap-2" aria-label=${'Subjects in Class ' + c.cls}>
+          ${c.subjects.map(function (s) { return html`<li key=${s} className="chip">${s}</li>`; })}
+          ${c.otherSubjects ? html`<li className="chip">${c.otherSubjects}</li>` : null}
+        </ul>
+      </div>
+      <div className="sm:col-start-2 md:col-start-auto">
+        <button type="button" className="btn btn-line btn-sm" onClick=${function () { p.onEnquire(c.cls); }} aria-label=${'Enquire now about Class ' + c.cls}>Enquire Now ${ICONS.arrow}</button>
+      </div>
+    </article>`;
+  }
+
+  function Courses(p) {
+    return html`<section id="courses" className="gutter border-t border-[var(--line)] bg-[var(--pale)] py-24 md:py-32">
+      <div className="mx-auto max-w-[1320px]">
+        <${Reveal} className="grid gap-8 lg:grid-cols-12 lg:items-end">
+          <${SectionHead} eyebrow="Courses and programmes" title="Find Your Learning Path." className="lg:col-span-8" />
+          <p className="lede lg:col-span-4">For CBSE and ICSE board students, from Class 6 to the Class 10 board examination, every class is taught with the same priority: understanding before memorisation.</p>
+        <//>
+        <div className="mt-16 flex flex-col gap-20 md:mt-24 md:gap-28">
+          ${CONFIG.courses.map(function (g) {
+            return html`<${Reveal} key=${g.group} className="grid gap-8 lg:grid-cols-12 lg:gap-12">
+              <div className="lg:col-span-4">
+                <p className="eyebrow">${g.note}</p>
+                <h3 className="h3 mt-5">${g.group}</h3>
+                <p className="mt-4 max-w-[22rem] text-[0.95rem] leading-relaxed text-[var(--muted-strong)]">${g.intro}</p>
+                ${g.footnote ? html`<p className="mt-5"><${Tbc}>${g.footnote}<//></p>` : null}
+              </div>
+              <div className="lg:col-span-8">
+                ${g.items.map(function (c) { return html`<${CourseRow} key=${c.cls} course=${c} onEnquire=${p.onEnquire} />`; })}
+              </div>
+            <//>`;
+          })}
+        </div>
+      </div>
+    </section>`;
+  }
+
+  function Faculty() {
+    return html`<section id="faculty" className="gutter py-24 md:py-32">
+      <div className="mx-auto max-w-[1320px]">
+        <${Reveal} className="grid gap-8 lg:grid-cols-12 lg:items-end">
+          <${SectionHead} eyebrow="Faculty" title="Learn From Those Who Guide." className="lg:col-span-8" />
+          <p className="lede lg:col-span-4">Experienced teachers who explain concepts clearly and know each student by name.</p>
+        <//>
+        <div className="mt-16 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-4 md:mt-24">
+          ${CONFIG.faculty.map(function (f, i) {
+            var rows = [['Subject', f.subject], ['Qualifications', f.qualifications], ['Experience', f.experience]].filter(function (r) { return r[1]; });
+            return html`<${Reveal} key=${i} as="article" delay=${i * 80} className=${i % 2 ? 'lg:mt-14' : ''}>
+              <${Photo} src=${f.photo} initials=${f.name.charAt(0)} className="aspect-[3/4] w-full" tone=${i % 2 ? 'c' : 'b'} alt=${f.name} />
+              <h3 className="font-serif mt-5 text-[1.75rem] font-medium leading-tight tracking-tight">${f.name}</h3>
+              ${rows.length ? html`<dl className="mt-4 border-t border-[var(--line)] text-[0.9rem]">
+                ${rows.map(function (r) {
+                  return html`<div key=${r[0]} className="grid grid-cols-[6.5rem_1fr] gap-3 border-b border-[var(--line)] py-3">
+                    <dt className="pt-0.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted-strong)]">${r[0]}</dt>
+                    <dd>${r[1]}</dd>
+                  </div>`;
+                })}
+              </dl>` : null}
+            <//>`;
+          })}
+        </div>
+      </div>
+    </section>`;
+  }
+
+  function Philosophy() {
+    return html`<section id="philosophy" className="gutter bg-[var(--forest)] py-24 text-white md:py-32">
+      <div className="mx-auto max-w-[1320px]">
+        <${Reveal} className="max-w-[48rem]">
+          <p className="eyebrow" style=${{ color: 'var(--mint)' }}>Teaching philosophy</p>
+          <h2 className="h2 mt-6">Three Principles We Teach By.</h2>
+        <//>
+        <div className="mt-16 grid gap-12 md:mt-24 md:grid-cols-3 md:gap-8">
+          ${CONFIG.principles.map(function (pr, i) {
+            return html`<${Reveal} key=${pr.n} delay=${i * 110} className=${cx('border-t border-[rgba(255,255,255,.22)] pt-6', i === 1 && 'md:mt-16', i === 2 && 'md:mt-32')}>
+              <div className="font-serif text-[clamp(4.5rem,8vw,7rem)] font-normal leading-[.9] tracking-tight" style=${{ color: 'var(--mint)' }}>${pr.n}</div>
+              <h3 className="font-serif mt-8 text-[1.9rem] font-medium leading-tight tracking-tight">${pr.title}</h3>
+              <p className="mt-4 max-w-[22rem] text-[1rem] leading-relaxed text-[rgba(255,255,255,.82)]">${pr.text}</p>
+            <//>`;
+          })}
+        </div>
+      </div>
+    </section>`;
+  }
+
+  function hasResults() {
+    var R = CONFIG.results;
+    return !!(R.achievements.length || R.boards.length || R.milestones.length || R.testimonials.length);
+  }
+
+  function Results() {
+    var R = CONFIG.results;
+    var blockCls = 'border-b border-r border-[var(--line)] p-7 md:p-10';
+    var listRow = 'flex items-baseline justify-between gap-4 border-t border-[var(--line)] py-4 text-[0.95rem]';
+    var blocks = [];
+    if (R.achievements.length) blocks.push(html`<div key="a" className=${blockCls}>
+      <h3 className="h3">Student achievements</h3>
+      <ul className="mt-6">${R.achievements.map(function (a, i) { return html`<li key=${i} className=${listRow}><span>${a.student}, ${a.achievement}</span><span className="shrink-0 text-[var(--muted-strong)]">${a.year}</span></li>`; })}</ul>
+    </div>`);
+    if (R.boards.length) blocks.push(html`<div key="b" className=${blockCls}>
+      <h3 className="h3">Board examination results</h3>
+      <div className="mt-6 text-[0.95rem]">
+        <div className="grid grid-cols-[4.5rem_5rem_1fr] gap-3 pb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--muted-strong)]"><span>Year</span><span>Class</span><span>Result</span></div>
+        ${R.boards.map(function (b, i) { return html`<div key=${i} className="grid grid-cols-[4.5rem_5rem_1fr] gap-3 border-t border-[var(--line)] py-4"><span>${b.year}</span><span>${b.cls}</span><span>${b.result}</span></div>`; })}
+      </div>
+    </div>`);
+    if (R.milestones.length) blocks.push(html`<div key="m" className=${blockCls}>
+      <h3 className="h3">Academic milestones</h3>
+      <ul className="mt-6">${R.milestones.map(function (m, i) { return html`<li key=${i} className=${listRow}><span>${m.title}</span><span className="shrink-0 text-[var(--muted-strong)]">${m.year}</span></li>`; })}</ul>
+    </div>`);
+    if (R.testimonials.length) blocks.push(html`<div key="t" className=${cx(blockCls, 'bg-[var(--pale)]')}>
+      <h3 className="h3">Testimonials</h3>
+      <div className="mt-6 flex flex-col">${R.testimonials.map(function (t, i) {
+        return html`<figure key=${i} className="m-0 border-t border-[var(--line)] py-5">
+          <blockquote className="m-0 font-serif text-[1.2rem] italic leading-snug text-[var(--muted-strong)]">“${t.quote}”</blockquote>
+          <figcaption className="mt-3 text-[0.85rem]">${t.name}${t.detail ? ', ' + t.detail : ''}</figcaption>
+        </figure>`;
+      })}</div>
+    </div>`);
+    return html`<section id="results" className="gutter py-24 md:py-32">
+      <div className="mx-auto max-w-[1320px]">
+        <${Reveal} className="max-w-[56rem]">
+          <${SectionHead} eyebrow="Results and achievements" title="Progress Worth Celebrating." />
+        <//>
+        <${Reveal} className=${cx('mt-16 grid border-l border-t border-[var(--line)] md:mt-24', blocks.length > 1 && 'md:grid-cols-2')}>${blocks}<//>
+      </div>
+    </section>`;
+  }
+
+  function Gallery() {
+    return html`<section id="gallery" className="gutter border-t border-[var(--line)] py-24 md:py-32">
+      <div className="mx-auto max-w-[1320px]">
+        <${Reveal} className="grid gap-8 lg:grid-cols-12 lg:items-end">
+          <${SectionHead} eyebrow="Campus and gallery" title="A Look Inside." className="lg:col-span-8" />
+          <p className="lede lg:col-span-4">Classrooms, teaching sessions and the institute, where students learn every day.</p>
+        <//>
+        <div className="mt-16 grid grid-cols-1 gap-3 md:mt-24 md:grid-cols-12 md:auto-rows-[11rem] md:gap-4">
+          ${CONFIG.gallery.map(function (g, i) {
+            return html`<${Reveal} key=${g.label} delay=${i * 70} className=${cx('aspect-[4/3] md:aspect-auto', g.span)}>
+              <${Photo} src=${g.src} label=${g.label} hint=${g.hint} tone=${g.tone} pos=${g.pos} scale=${g.scale} origin=${g.origin} className="h-full w-full" />
+            <//>`;
+          })}
+        </div>
+      </div>
+    </section>`;
+  }
+
+  /* ===================== enquiry form ===================== */
+  var EMPTY = { student: '', parent: '', phone: '', cls: '', subject: '', message: '' };
+
+  function validate(v) {
+    var e = {};
+    if (v.student.trim().length < 2) e.student = 'Enter the student’s name.';
+    if (!/^[6-9]\d{9}$/.test(normPhone(v.phone))) e.phone = 'Enter a valid 10-digit mobile number.';
+    if (!v.cls) e.cls = 'Choose the class.';
+    return e;
+  }
+
+  function Field(p) {
+    return html`<div className=${p.className || ''}>
+      <label htmlFor=${p.id} className="label">${p.label}${p.optional ? html`<span className="ml-2 font-normal normal-case tracking-normal text-[var(--muted-strong)]">(optional)</span>` : null}</label>
+      ${p.children}
+      ${p.error ? html`<p id=${p.id + '-err'} role="alert" className="mt-2 text-[13px] text-[var(--danger)]">${p.error}</p>` : null}
+    </div>`;
+  }
+
+  function EnquiryForm(p) {
+    var s1 = useState(EMPTY), v = s1[0], setV = s1[1];
+    var s2 = useState({}), err = s2[0], setErr = s2[1];
+    var s3 = useState('idle'), status = s3[0], setStatus = s3[1];
+    var s4 = useState(null), sent = s4[0], setSent = s4[1];
+    var nameRef = useRef(null);
+
+    useEffect(function () {
+      if (!p.prefill.nonce) return;
+      setV(function (x) { return Object.assign({}, x, { cls: p.prefill.cls || x.cls }); });
+      setStatus('idle');
+      var t = setTimeout(function () { if (nameRef.current) nameRef.current.focus({ preventScroll: true }); }, 700);
+      return function () { clearTimeout(t); };
+    }, [p.prefill.nonce]);
+
+    function set(k) {
+      return function (e) {
+        var val = e.target.value;
+        setV(function (x) { var n = Object.assign({}, x); n[k] = val; return n; });
+        if (err[k]) setErr(function (x) { var n = Object.assign({}, x); delete n[k]; return n; });
+      };
+    }
+    function a11y(k) {
+      return { 'aria-invalid': err[k] ? 'true' : 'false', 'aria-describedby': err[k] ? 'f-' + k + '-err' : undefined };
+    }
+    async function onSubmit(e) {
+      e.preventDefault();
+      var er = validate(v);
+      setErr(er);
+      var keys = Object.keys(er);
+      if (keys.length) { var el = document.getElementById('f-' + keys[0]); if (el) el.focus(); return; }
+      setStatus('sending');
+      var payload = Object.assign({}, v, { phone: normPhone(v.phone) });
+      try {
+        if (CONFIG.form.endpoint) {
+          var r = await fetch(CONFIG.form.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+          if (!r.ok) throw new Error('failed');
+        }
+        setSent(payload);
+        setStatus('sent');
+      } catch (x) { setStatus('error'); }
+    }
+    function reset() { setV(EMPTY); setErr({}); setSent(null); setStatus('idle'); }
+
+    if (status === 'sent' && sent) {
+      var live = !!CONFIG.form.endpoint;
+      var first = sent.student.trim().split(/\s+/)[0];
+      var msg = 'Hello Evolution Classes, I would like to enquire about admission to Class ' + sent.cls + (sent.subject ? ' (' + sent.subject + ')' : '') + '. Student: ' + sent.student.trim() + '.' + (sent.parent.trim() ? ' Parent/Guardian: ' + sent.parent.trim() + '.' : '') + ' Phone: ' + sent.phone + '.' + (sent.message.trim() ? ' Message: ' + sent.message.trim() : '');
+      return html`<div role="status" aria-live="polite" className="flex h-full flex-col justify-center">
+        <span className="inline-flex h-12 w-12 items-center justify-center border border-[var(--green)] text-[var(--green)]">${ICONS.check}</span>
+        <h3 className="h3 mt-8">Thank you, ${first}.</h3>
+        <p className="mt-4 max-w-[30rem] text-[1rem] leading-relaxed text-[var(--muted-strong)]">
+          ${live
+            ? 'We have received your enquiry for Class ' + sent.cls + '. The admissions team will contact you on ' + sent.phone + '.'
+            : 'One last step. Send your enquiry for Class ' + sent.cls + (sent.subject ? ', ' + sent.subject : '') + ' on WhatsApp so the admissions team receives it and can reply to you.'}
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a className="btn btn-solid" href=${waLink(msg)} target="_blank" rel="noopener noreferrer">${live ? 'Message us on WhatsApp' : 'Send on WhatsApp'} ${ICONS.out}</a>
+          <button type="button" className="btn btn-line" onClick=${reset}>Submit another enquiry</button>
+        </div>
+      </div>`;
+    }
+
+    return html`<form onSubmit=${onSubmit} noValidate aria-label="Admission enquiry form">
+      <div className="grid gap-x-8 gap-y-8 md:grid-cols-2">
+        <${Field} id="f-student" label="Student name" error=${err.student}>
+          <input id="f-student" ref=${nameRef} className="input" type="text" autoComplete="name" required value=${v.student} onChange=${set('student')} ...${a11y('student')} />
+        <//>
+        <${Field} id="f-parent" label="Parent or guardian" optional=${true}>
+          <input id="f-parent" className="input" type="text" autoComplete="off" value=${v.parent} onChange=${set('parent')} />
+        <//>
+        <${Field} id="f-phone" label="Phone number" error=${err.phone}>
+          <input id="f-phone" className="input" type="tel" inputMode="tel" autoComplete="tel" placeholder="10-digit mobile number" required value=${v.phone} onChange=${set('phone')} ...${a11y('phone')} />
+        <//>
+        <${Field} id="f-cls" label="Class" error=${err.cls}>
+          <div className="relative">
+            <select id="f-cls" className="input appearance-none pr-8" required value=${v.cls} onChange=${set('cls')} ...${a11y('cls')}>
+              <option value="">Select class</option>
+              ${CONFIG.form.classes.map(function (c) { return html`<option key=${c} value=${String(c)}>Class ${c}</option>`; })}
+            </select>
+            <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-[var(--muted-strong)]">${ICONS.caret}</span>
+          </div>
+        <//>
+        <${Field} id="f-subject" label="Subject of interest" className="md:col-span-2">
+          <div className="relative">
+            <select id="f-subject" className="input appearance-none pr-8" value=${v.subject} onChange=${set('subject')}>
+              <option value="">Select subject</option>
+              ${CONFIG.form.subjects.map(function (s) { return html`<option key=${s} value=${s}>${s}</option>`; })}
+            </select>
+            <span className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-[var(--muted-strong)]">${ICONS.caret}</span>
+          </div>
+        <//>
+        <${Field} id="f-message" label="Message" optional=${true} className="md:col-span-2">
+          <textarea id="f-message" className="input" rows="4" placeholder="Anything you would like us to know" value=${v.message} onChange=${set('message')}></textarea>
+        <//>
+      </div>
+      <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+        <button type="submit" className="btn btn-solid" disabled=${status === 'sending'}>${status === 'sending' ? 'Sending' : 'Send Enquiry'} ${ICONS.arrow}</button>
+        ${status === 'error' ? html`<p role="alert" className="text-[13px] text-[var(--danger)]">The enquiry could not be sent. Check your connection and try again, or use WhatsApp.</p>` : null}
+      </div>
+    </form>`;
+  }
+
+  function Contact(p) {
+    var C = CONFIG.contact;
+    var wa = waLink('Hello Evolution Classes, I would like to know more about admissions.');
+    return html`<section id="contact" className="gutter border-t border-[var(--line)] bg-[var(--pale)] py-24 md:py-32">
+      <div className="mx-auto max-w-[1320px]">
+        <${Reveal}>
+          <${SectionHead} eyebrow="Contact and admissions" title="Your Next Chapter Starts Here." className="max-w-[56rem]" />
+        <//>
+        <div className="mt-16 grid gap-14 md:mt-24 lg:grid-cols-12 lg:gap-12">
+          <${Reveal} className="lg:col-span-5">
+            <dl className="border-t border-[var(--line)] bg-transparent">
+              <div className="grid gap-1 border-b border-[var(--line)] py-5 sm:grid-cols-[7rem_1fr] sm:gap-6">
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--muted-strong)] pt-1">Address</dt>
+                <dd>${C.address ? C.address : html`<${Tbc}>[Institute address]<//>`}<br />Gonda, Uttar Pradesh</dd>
+              </div>
+              <div className="grid gap-1 border-b border-[var(--line)] py-5 sm:grid-cols-[7rem_1fr] sm:gap-6">
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--muted-strong)] pt-1">Phone</dt>
+                <dd className="flex flex-col gap-1">${C.phones.length ? C.phones.map(function (n) { return html`<span key=${n}>${n}</span>`; }) : html`<${Tbc}>+91 XXXXX XXXXX, to confirm<//>`}</dd>
+              </div>
+              <div className="grid gap-3 border-b border-[var(--line)] py-5 sm:grid-cols-[7rem_1fr] sm:gap-6">
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--muted-strong)] pt-2">WhatsApp</dt>
+                <dd>
+                  <a className="btn btn-line btn-sm" href=${wa} target="_blank" rel="noopener noreferrer">Message us on WhatsApp ${ICONS.out}</a>
+                </dd>
+              </div>
+            </dl>
+            <div className="mapbox relative mt-8 aspect-[4/3] w-full overflow-hidden">
+              ${C.mapEmbedSrc
+                ? html`<iframe title="Evolution Classes location on Google Maps" src=${C.mapEmbedSrc} className="absolute inset-0 h-full w-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>`
+                : html`<div className="absolute inset-0 flex flex-col items-center justify-center gap-3 px-6 text-center">
+                    <span className="text-[var(--green)]">${ICONS.pin}</span>
+                    <span className="font-serif text-[1.4rem] leading-tight">Gonda, Uttar Pradesh</span>
+                    <a className="btn btn-solid btn-sm mt-1" href=${mapsLink()} target="_blank" rel="noopener noreferrer">Open in Google Maps ${ICONS.out}</a>
+                  </div>`}
+            </div>
+          <//>
+          <${Reveal} className="lg:col-span-7" delay=${120}>
+            <div className="border border-[var(--line)] bg-white p-7 md:p-12">
+              <h3 className="h3 mb-9">Admission enquiry</h3>
+              <${EnquiryForm} prefill=${p.prefill} />
+            </div>
+          <//>
+        </div>
+      </div>
+    </section>`;
+  }
+
+  function Footer() {
+    var B = CONFIG.brand, C = CONFIG.contact;
+    var year = new Date().getFullYear();
+    return html`<footer className="gutter border-t border-[var(--line)] pt-20">
+      <div className="mx-auto max-w-[1320px]">
+        <div className="grid gap-12 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <${Wordmark} />
+            <p className="mt-6 max-w-[26rem] text-[0.95rem] leading-relaxed text-[var(--muted-strong)]">${B.description}</p>
+          </div>
+          <nav aria-label="Footer" className="md:col-span-2">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]">Navigate</p>
+            <ul className="mt-5 flex flex-col gap-3 text-[0.95rem]">
+              ${NAV().map(function (n) { return html`<li key=${n[0]}><a className="flink" href=${'#' + n[0]} onClick=${function (e) { e.preventDefault(); go(n[0]); }}>${n[1]}</a></li>`; })}
+            </ul>
+          </nav>
+          <div className="md:col-span-2">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]">Courses</p>
+            <ul className="mt-5 flex flex-col gap-3 text-[0.95rem]">
+              ${CONFIG.form.classes.map(function (c) { return html`<li key=${c}><a className="flink" href="#courses" onClick=${function (e) { e.preventDefault(); go('courses'); }}>Class ${c}</a></li>`; })}
+            </ul>
+          </div>
+          <div className="md:col-span-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]">Contact</p>
+            <ul className="mt-5 flex flex-col gap-3 text-[0.95rem] text-[var(--muted-strong)]">
+              <li>${C.address ? C.address + ', ' : html`<${Tbc}>[Address]<//>`}${C.address ? null : ', '}Gonda, Uttar Pradesh</li>
+              ${C.phones.length ? C.phones.map(function (n) { return html`<li key=${n}>${n}</li>`; }) : html`<li><${Tbc}>+91 XXXXX XXXXX<//></li>`}
+            </ul>
+            <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-[0.9rem]" aria-label="Social media">
+              ${CONFIG.social.filter(function (s) { return s.href; }).map(function (s) {
+                return html`<li key=${s.label}><a className="flink" href=${s.href} target="_blank" rel="noopener noreferrer">${s.label}</a></li>`;
+              })}
+            </ul>
+          </div>
+        </div>
+        <div className="mt-16 flex flex-col justify-between gap-2 border-t border-[var(--line)] py-6 text-[12px] text-[var(--muted-strong)] sm:flex-row">
+          <p>© ${year} Evolution Classes. All rights reserved.</p>
+        </div>
+      </div>
+      <div className="overflow-hidden" aria-hidden="true">
+        <div className="select-none whitespace-nowrap pb-6 pt-4 font-serif font-medium leading-[1.15] tracking-tight" style=${{ fontSize: 'clamp(2.5rem, 10vw, 9rem)', paddingLeft: '0.04em', paddingRight: '0.04em', color: '#cdebd7' }}>Evolution Classes</div>
+      </div>
+    </footer>`;
+  }
+
+  function FloatingWhatsApp() {
+    return html`<a className="fab" href=${waLink('Hello Evolution Classes, I would like to know more about admissions.')} target="_blank" rel="noopener noreferrer" aria-label="Chat with Evolution Classes on WhatsApp">
+      ${ICONS.chat}<span className="hidden sm:inline">WhatsApp</span>
+    </a>`;
+  }
+
+  /* ===================== app ===================== */
+  var SECTION_IDS = ['home', 'about', 'courses', 'faculty', 'philosophy', 'results', 'gallery', 'contact'];
+
+  function useActive() {
+    var s = useState('home'), a = s[0], setA = s[1];
+    useEffect(function () {
+      if (!('IntersectionObserver' in window)) return;
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) setA(e.target.id); });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      SECTION_IDS.forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+      return function () { io.disconnect(); };
+    }, []);
+    return a;
+  }
+
+  function App() {
+    var s = useState({ cls: '', nonce: 0 }), prefill = s[0], setPrefill = s[1];
+    var active = useActive();
+    function onEnquire(cls) {
+      setPrefill(function (p) { return { cls: cls ? String(cls) : '', nonce: p.nonce + 1 }; });
+      go('contact');
+    }
+    return html`<div>
+      <a href="#about" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:bg-white focus:px-4 focus:py-2" onClick=${function (e) { e.preventDefault(); go('about'); }}>Skip to content</a>
+      <${Header} active=${active === 'philosophy' ? 'faculty' : active === 'gallery' ? (hasResults() ? 'results' : 'faculty') : active} onEnquire=${onEnquire} />
+      <main>
+        <${Hero} onEnquire=${onEnquire} />
+        <${About} />
+        <${Courses} onEnquire=${onEnquire} />
+        <${Faculty} />
+        <${Philosophy} />
+        ${hasResults() ? html`<${Results} />` : null}
+        <${Gallery} />
+        <${Contact} prefill=${prefill} />
+      </main>
+      <${Footer} />
+      <${FloatingWhatsApp} />
+    </div>`;
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+})();
+</script>
+
+</body></html>
